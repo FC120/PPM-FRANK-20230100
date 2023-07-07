@@ -176,9 +176,9 @@ int main() {
                 consumo_promedio, cliente, km_por_galon, precio_combustible * km_recorridos / km_por_galon,
                 gastos_varios_km, precio_combustible, costo_total, km_recorridos);
 
-        printf("\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \n   \t\t\t\t\t\t\t\t\t\n\n");
 
     }
+    printf("\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \n   \t\t\t\t\t\t\t\t\t\n\n");
     fclose(ar);
     printf("\nLos resultados se han guardado correctamente en el archivo Freddy Guerrero.txt.\n");
     printf("\n-----GRACIAS POR CONFIAR EN NOSOTROS, VUELVA PRONTO-----\n\n");
