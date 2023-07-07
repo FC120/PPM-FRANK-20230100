@@ -1,9 +1,15 @@
 #include <stdio.h>
-#define PRECIO_GALON 192.00
+#define PRECIO_GALON 274.50
+#define litro 3.785
 
     int main() {
     char nombre[50];
-    float kilometros, litros,rendimiento,pago_de_seguro,seguro_por_kilometros,mantenimineto,precio_de_manteniminto_por_kilometros,aceite,consumo_de_aceite,consu_precio,gastos_totales;
+    float kilometros, litros,rendimiento;
+    float pago_de_seguro,seguro_por_kilometros;
+    float mantenimineto,precio_de_manteniminto_por_kilometros;
+    float aceite,consumo_de_aceite;
+    float consu_precio,gastos_totales;
+    float conver_litros_galones5,galones5,litros2;
 
     printf("-----BIENVENIDO/A-----\n");
     printf("Ingrese el nombre del cliente: ");
@@ -12,7 +18,7 @@
     printf("Ingrese la cantidad de kilometros recorridos: ");
     scanf("%f", &kilometros);
 
-    printf("Ingrese la cantidad de litros de gasolina consumidos: ");
+    printf("Ingrese la cantidad de litros de gasolina consumidos (minimo 8k maximo 16km): ");
     scanf("%f", &litros);
     printf("\n");
 
