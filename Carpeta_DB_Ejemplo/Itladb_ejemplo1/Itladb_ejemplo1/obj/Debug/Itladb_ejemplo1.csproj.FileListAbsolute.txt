@@ -1,0 +1,11 @@
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\bin\Debug\Itladb_ejemplo1.exe.config
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\bin\Debug\Itladb_ejemplo1.exe
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\bin\Debug\Itladb_ejemplo1.pdb
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\bin\Debug\LiteDB.dll
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\bin\Debug\LiteDB.xml
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.csproj.AssemblyReference.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.csproj.CoreCompileInputs.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.csproj.CopyComplete
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.exe
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Carpeta_DB_Ejemplo\Itladb_ejemplo1\Itladb_ejemplo1\obj\Debug\Itladb_ejemplo1.pdb
