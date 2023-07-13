@@ -1,0 +1,16 @@
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.exe
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.deps.json
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.json
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.dev.json
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.dll
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.pdb
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.AssemblyReference.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.Form1.resources
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.GenerateResource.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfoInputs.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfo.cs
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.dll
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.pdb
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\T ppm\PPM-FRANK-20230100\Calculadora arreglada\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.genruntimeconfig.cache
