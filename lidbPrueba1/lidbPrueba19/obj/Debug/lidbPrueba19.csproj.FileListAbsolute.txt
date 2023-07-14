@@ -1,0 +1,20 @@
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\bin\Debug\LiteDB.dll
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\bin\Debug\LiteDB.xml
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.CopyComplete
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Ejemplos\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\bin\Debug\lidbPrueba19.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\bin\Debug\LiteDB.dll
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\bin\Debug\LiteDB.xml
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 8\lidbPrueba19\lidbPrueba19\obj\Debug\lidbPrueba19.csproj.CopyComplete
