@@ -1,0 +1,63 @@
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert - Copy (2)\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.dll
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.xml
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.dll
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.xml
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Users\Fc\Documents\ITLA SEGUNDO CUATRI\PROGRAMACION MECA\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.dll
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\bin\Debug\LiteDB.xml
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program 1\Risxpert program\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\LiteDB.dll
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\LiteDB.xml
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
