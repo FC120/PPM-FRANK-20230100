@@ -31,7 +31,9 @@ namespace Risxpert
         int CELL_ACTIVO = 4;
         int CELL_ANALISTA = 5;
         int CELL_FECHA = 6;
-        int Row = 0;
+        //int Row = 0;
+
+        List<Riesgo2> Riesgos2 = new List<Riesgo2>();
 
         public int F { get; set; }
         public int S { get; set; }
@@ -41,7 +43,7 @@ namespace Risxpert
         public int V { get; set; }
 
 
-       
+
 
 
 
@@ -79,6 +81,7 @@ namespace Risxpert
         public Form_Risxpert()
         {
             InitializeComponent();
+            dataGridView4.CellFormatting += dataGridView4_CellFormatting;
         }
 
 
@@ -94,7 +97,7 @@ namespace Risxpert
         {
 
 
-           
+
 
 
 
@@ -126,15 +129,135 @@ namespace Risxpert
 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void dataGridView3_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                DataGridViewCell cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
-                object value = cell.Value;
+                DataGridViewCell cell = dataGridView3.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                int newValue;
 
-                // Actualiza el valor en el DataGridView2 en la misma fila y columna
-                dataGridView2.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = value;
+                if (int.TryParse(cell.Value?.ToString(), out newValue))
+                {
+                    // Validar que el valor ingresado esté en el rango de 1 a 5
+                    if (newValue < 1 || newValue > 5)
+                    {
+                        MessageBox.Show("Por favor ingrese un valor entre 1 y 5.");
+                        cell.Value = null;
+                        return;
+                    }
+                }
+                else
+                {
+                    // Si no es un número entero válido, borra el valor ingresado
+                    cell.Value = null;
+                }
             }
         }
+
+        private void dataGridView3_CellValueValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+            {
+                if (!string.IsNullOrEmpty(e.FormattedValue?.ToString()))
+                {
+                    int newValue;
+                    if (!int.TryParse(e.FormattedValue?.ToString(), out newValue))
+                    {
+                        e.Cancel = true;
+                        dataGridView3.Rows[e.RowIndex].Cells[e.ColumnIndex].ErrorText = "Debe ingresar un número entero.";
+                    }
+                    else
+                    {
+                        dataGridView3.Rows[e.RowIndex].Cells[e.ColumnIndex].ErrorText = string.Empty;
+                    }
+                }
+            }
+        }
+
+        private void EnviarDatosDataGridView3DataGridView4(DataGridView dataGridView3, DataGridView dataGridView4)
+        {
+            // Obtener la fila actualmente seleccionada en DataGridView3
+            DataGridViewRow selectedRow = dataGridView3.CurrentRow;
+
+            // Verificar si la fila no es nueva y contiene datos válidos
+            if (!selectedRow.IsNewRow && !selectedRow.Cells.Cast<DataGridViewCell>().Any(cell => !string.IsNullOrEmpty(cell.ErrorText)))
+            {
+                // Obtener los valores de las celdas del DataGridView3
+                int valorF = Convert.ToInt32(selectedRow.Cells["F"].Value);
+                int valorS = Convert.ToInt32(selectedRow.Cells["S"].Value);
+                int valorP = Convert.ToInt32(selectedRow.Cells["P"].Value);
+                int valorE = Convert.ToInt32(selectedRow.Cells["E"].Value);
+                int valorA = Convert.ToInt32(selectedRow.Cells["A"].Value);
+                int valorV = Convert.ToInt32(selectedRow.Cells["V"].Value);
+
+                // Agregar una nueva fila al DataGridView4 con los valores obtenidos
+                int n = dataGridView4.Rows.Add(valorF, valorS, valorP, valorE, valorA, valorV);
+
+                // Limpiar las celdas de la fila actual en DataGridView3 después de agregar los datos
+                selectedRow.Cells["F"].Value = null;
+                selectedRow.Cells["S"].Value = null;
+                selectedRow.Cells["P"].Value = null;
+                selectedRow.Cells["E"].Value = null;
+                selectedRow.Cells["A"].Value = null;
+                selectedRow.Cells["V"].Value = null;
+
+                // Mover la selección a la siguiente fila si no es la última fila
+                if (selectedRow.Index < dataGridView3.Rows.Count - 1)
+                {
+                    dataGridView3.CurrentCell = dataGridView3.Rows[selectedRow.Index + 1].Cells["F"];
+                }
+            }
+        }
+
+
+        private void dataGridView3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Obtener la fila actualmente seleccionada en DataGridView3
+                DataGridViewRow selectedRow = dataGridView3.CurrentRow;
+
+                // Verificar si la fila no es nueva y contiene datos válidos
+                if (!selectedRow.IsNewRow && !selectedRow.Cells.Cast<DataGridViewCell>().Any(cell => !string.IsNullOrEmpty(cell.ErrorText)))
+                {
+                    // Obtener los valores de las celdas del DataGridView3
+                    int valorF = Convert.ToInt32(selectedRow.Cells["F"].Value);
+                    int valorS = Convert.ToInt32(selectedRow.Cells["S"].Value);
+                    int valorP = Convert.ToInt32(selectedRow.Cells["P"].Value);
+                    int valorE = Convert.ToInt32(selectedRow.Cells["E"].Value);
+                    int valorA = Convert.ToInt32(selectedRow.Cells["A"].Value);
+                    int valorV = Convert.ToInt32(selectedRow.Cells["V"].Value);
+
+                    // Agregar una nueva fila al DataGridView4 con los valores obtenidos
+                    int n = dataGridView4.Rows.Add(valorF, valorS, valorP, valorE, valorA, valorV);
+
+                    // Limpiar las celdas de la fila actual en DataGridView3 después de agregar los datos
+                    selectedRow.Cells["F"].Value = null;
+                    selectedRow.Cells["S"].Value = null;
+                    selectedRow.Cells["P"].Value = null;
+                    selectedRow.Cells["E"].Value = null;
+                    selectedRow.Cells["A"].Value = null;
+                    selectedRow.Cells["V"].Value = null;
+
+                    // Mover la selección a la siguiente fila si no es la última fila
+                    if (selectedRow.Index < dataGridView3.Rows.Count - 1)
+                    {
+                        dataGridView3.CurrentCell = dataGridView3.Rows[selectedRow.Index + 1].Cells["F"];
+                    }
+                }
+
+                // Evitar que se propague el evento
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+
+
+
 
 
         private void EliminarPrimeraFila(object sender, EventArgs e)
@@ -198,7 +321,7 @@ namespace Risxpert
         //    Riesgos = Riesgos[i];
 
         //}
-            
+
 
 
 
@@ -255,90 +378,10 @@ namespace Risxpert
 
 
 
-            /*  DataTable table = new DataTable();
 
-             /* table.Columns.Add("Ref", typeof(int));
-              table.Columns.Add("ID", typeof(string));
-              table.Columns.Add("Activo/Bien", typeof(string));
-              table.Columns.Add("Riesgo", typeof(string));
-              table.Columns.Add("Tipo de Riesgo", typeof(string));
-              table.Columns.Add("Daño", typeof(string));
-
-
-
-              table.Rows.Add(1, "aaaa", typeof(string));
-
-              dataGridView1.DataSource = table;
-              */
-
-
-
-
-
-            //List<Riesgo> Riesgos = new List<Riesgo>();
-
-            //  Riesgos.Add(new Riesgo(dataGridView1));
-
-            //dataGridView1.ToString.Text.Rows.Add();
-
-            /* for (n = 0; n < Riesgo.Count; n++)
-                // No hay necesidad de type cast
-                r = Riesgos[n];
-            Console.Writeline(r);
-           */
         }
 
-        /*
-          private void BtnMas_Click_1(object sender, EventArgs e)
-        {
-            int n = dataGridView1.Rows.Add();
 
-            dataGridView1.Rows[n].ToString();
-
-            DataGridViewRow lastRow = dataGridView1.Rows[dataGridView1.Rows.Count - 1];
-            bool isLastRowEmpty = true;
-            foreach (DataGridViewCell cell in lastRow.Cells)
-            {
-                if (cell.Value != null && cell.Value.ToString().Trim() != "")
-                {
-                    isLastRowEmpty = false;
-                    break;
-                }
-            }
-
-            // Si la última fila está vacía, agregar una nueva fila
-            if (isLastRowEmpty)
-            {
-                dataGridView1.AllowUserToAddRows = true;
-                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0].Selected = true; // Opcional: seleccionar la nueva fila
-            }
-            else
-            { }
-
-            //Riesgo R1 = new Riesgo();
-            {
-
-                /*    ID = n + 1,
-                    Nombre = txtAnalista.Text;
-                    lblFecha.Text = txtFecha.Text;
-                    Activo = v
-                */
-
-            /*}/*
-            //for (n = 0; n = Riesgo)
-
-
-            /* for (n = 0; n < Riesgo.Count; n++)
-                // No hay necesidad de type cast
-                r = Riesgos[n];
-           // Console.Writeline(r);
-
-            R1 = new Riesgo;
-
-
-            dataGridView1.Rows.Add();
-        }
-            */
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -486,14 +529,14 @@ namespace Risxpert
              /*Fecha = txtFecha.Text; */
 
 
-        
+
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        
+
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -551,29 +594,29 @@ namespace Risxpert
          }*/
 
 
-        
 
 
 
 
 
 
-       
+
+
 
         private void btnMas_Click(object sender, EventArgs e)
         {
             Riesgo newRiesgo = new Riesgo();
             Riesgos.Add(newRiesgo);
-            
+
             int n = dataGridView1.Rows.Add();
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = Riesgos;
 
-            
+
             dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0];
 
-            
-           
+
+
 
 
             //DataGridViewRow newRow = dataGridView1.Rows[n];
@@ -606,7 +649,7 @@ namespace Risxpert
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Riesgo r1 = new Riesgo();
-           // Row = dataGridView1.Rows.Add();
+            // Row = dataGridView1.Rows.Add();
             r1.Id = Int32.Parse(txtId.Text);
             r1.Activo = txtActivo.Text;
             r1.Nombre = txtNombre.Text;
@@ -615,7 +658,7 @@ namespace Risxpert
             r1.Analista = txtAnalista.Text;
             r1.Fecha = txtFecha.Text;
             //r1.Estado = r1.Estado.ToString(txtEstado.Text);
-            
+
 
             Riesgos.Add(r1);
 
@@ -637,7 +680,7 @@ namespace Risxpert
             dataGridView1.Rows[Row].Cells[CELL_ANALISTA].Value = r1.Analista;
             dataGridView1.Rows[Row].Cells[CELL_FECHA].Value = r1.Fecha;
             */
-            
+
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = Riesgos;
@@ -649,7 +692,7 @@ namespace Risxpert
             txtTipo.Text = string.Empty;
             txtAnalista.Text = string.Empty;
             txtFecha.Text = string.Empty;
-            
+
 
             dataGridView1.Refresh();
 
@@ -663,77 +706,19 @@ namespace Risxpert
                 r1.Analista = txtAnalista.Text;
                 r1.Fecha = txtFecha.Text;
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
-               // MessageBox.Show("El valor de ID debe ser un número válido.");
+                // MessageBox.Show("El valor de ID debe ser un número válido.");
             }
 
             AgregarDatosDataGridView2();
             AgregarDatosDataGridView5();
 
+
             ////////Crear una nueva instancia para la tabla 3
 
             //Riesgo r2 = new Riesgo();
 
-            //r2.F = F;
-            //r2.S = S;
-            //r2.P = P;
-            //r2.E = E;
-            //r2.A = A;
-            //r2.V = V;
-
-            //Riesgos.Add(r2);
-
-            //dataGridView3.DataSource = null;
-            //dataGridView3.DataSource = Riesgos;
-
-            //dataGridView3.Rows.Add(F, S, P, E, A, V);
-
-            //dataGridView3.Refresh();
-
-
-            /* Riesgo r2 = new Riesgo();
-
-             r2.Id = Int32.Parse(txtId.Text);
-             r2.Activo = txtActivo.Text;
-             r2.Nombre = txtNombre.Text;
-             r2.Tipo = txtTipo.Text;
-             r2.Daño = txtDano.Text;
-             r2.Analista = txtAnalista.Text;
-             r2.Fecha = txtFecha.Text;
-
-             Riesgos.Add(r2);
-
-             dataGridView2.DataSource = null;
-             dataGridView2.DataSource = Riesgos;
-
-             txtId.Text = string.Empty;
-             txtNombre.Text = string.Empty;
-             txtDano.Text = string.Empty;
-             txtActivo.Text = string.Empty;
-             txtTipo.Text = string.Empty;
-             txtAnalista.Text = string.Empty;
-             txtFecha.Text = string.Empty;
-
-
-             dataGridView2.Refresh();
-
-             try
-             {
-                 r2.Id = Int32.Parse(txtId.Text);
-                 r2.Activo = txtActivo.Text;
-                 r2.Nombre = txtNombre.Text;
-                 r2.Tipo = txtTipo.Text;
-                 r2.Daño = txtDano.Text;
-                 r2.Analista = txtAnalista.Text;
-                 r2.Fecha = txtFecha.Text;
-             }
-             catch (FormatException ex)
-             {
-                 // MessageBox.Show("El valor de ID debe ser un número válido.");
-             }
-
-             */
 
 
         }
@@ -744,6 +729,17 @@ namespace Risxpert
             dataGridView2.DataSource = Riesgos;
 
         }
+        private void AgregarDatosDataGridView4()
+        {
+            dataGridView4.DataSource = null;
+
+            
+
+            dataGridView4.DataSource = Riesgos;
+            dataGridView4.DataSource = Riesgos2;
+
+           
+        }
 
         private void AgregarDatosDataGridView5()
         {
@@ -752,10 +748,19 @@ namespace Risxpert
 
         }
 
+        private void AgregarDatosDataGridView6()
+        {
+
+            dataGridView6.DataSource = null;
+
+
+            dataGridView6.DataSource = Riesgos2;
+        }
+
 
         private void UpdateData(object sender, EventArgs e)
         {
-            for (int i = 0 ; i < dataGridView1.Rows.Count ; i++)
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 var r1 = dataGridView1.Rows[i];
 
@@ -768,44 +773,199 @@ namespace Risxpert
                 r1.Cells[CELL_FECHA].Value = txtFecha.Text;
 
 
-                /*Riesgo r2 = new Riesgo();
-                
-                r2.Id = Int32.Parse(txtTipo.Text);
-                r2.Activo = txtActivo.Text;
-                r2.Nombre = txtNombre.Text;
-                r2.Tipo = txtTipo.Text;
-                r2.Daño = txtDano.Text;
-                r2.Analista = txtAnalista.Text;
-                r2.Fecha = txtFecha.Text;
-                */
+
 
             }
         }
-    }
 
-
-
-
-
-    public class Riesgo
-    {
-        //  public int Ref { get; set; }
-        public int Id { get; set; }
-        public string Activo { get; set; }
-        public string Nombre { get; set; }
-        public string Tipo { get; set; }
-        public string Daño { get; set; }
-        public string Analista { get; set; }
-        public string Fecha { get; set; }
-        //public bool Estado { get; set;}
-
-       
-
-        internal object Add(Riesgo riesgos)
+        private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
+            Riesgo2 r2 = new Riesgo2();
+
+            r2.F = Int32.Parse(txtF.Text);
+            r2.S = Int32.Parse(txtS.Text);
+            r2.P = Int32.Parse(txtP.Text);
+            r2.E = Int32.Parse(txtE.Text);
+            r2.A = Int32.Parse(txtA.Text);
+            r2.V = Int32.Parse(txtV.Text);
+
+            Riesgos2.Add(r2);
+
+            dataGridView3.DataSource = null;
+            dataGridView3.DataSource = Riesgos2;
+
+            txtF.Text = string.Empty;
+            txtS.Text = string.Empty;
+            txtP.Text = string.Empty;
+            txtE.Text = string.Empty;
+            txtA.Text = string.Empty;
+            txtV.Text = string.Empty;
+
+
+            dataGridView3.Refresh();
+
+            try
+            {
+                r2.F = Int32.Parse(txtF.Text);
+                r2.S = Int32.Parse(txtS.Text);
+                r2.P = Int32.Parse(txtP.Text);
+                r2.E = Int32.Parse(txtE.Text);
+                r2.A = Int32.Parse(txtA.Text);
+                r2.V = Int32.Parse(txtV.Text);
+            }
+            catch (FormatException)
+            {
+                //MessageBox.Show("El valor de ID debe ser un número válido.");
+            }
+
+            
+                        AgregarDatosDataGridView4();
+
+
         }
+
+        private void dataGridView4_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                DataGridViewCell cell = dataGridView4.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                if (cell.Value != null)
+                {
+                    int valor = Convert.ToInt32(cell.Value);
+                    Color color = GetColorForValue(valor);
+                    cell.Style.BackColor = color;
+                }
+            }
+        }
+
+        private Color GetColorForValue(int valor)
+        {
+            switch (valor)
+            {
+                case 1:
+                    return Color.LightGreen;
+                case 2:
+                    return Color.Green;
+                case 3:
+                    return Color.Yellow;
+                case 4:
+                    return Color.Orange;
+                case 5:
+                    return Color.Red;
+                default:
+                    return Color.White; // Color predeterminado si no coincide con ninguno de los valores anteriores
+            }
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView4.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    int F = Convert.ToInt32(row.Cells["F"].Value);
+                    int S = Convert.ToInt32(row.Cells["S"].Value);
+                    int P = Convert.ToInt32(row.Cells["P"].Value);
+                    int E = Convert.ToInt32(row.Cells["E"].Value);
+                    int A = Convert.ToInt32(row.Cells["A"].Value);
+                    int V = Convert.ToInt32(row.Cells["V"].Value);
+
+                    int I = F * S;
+                    int D = P * E;
+                    int C = I + D;
+                    int PB = A * V;
+                    int ER = C * PB;
+                    // Actualizar las celdas PB y ER en el DataGridView4
+                    row.Cells["PB"].Value = PB;
+                    row.Cells["ER"].Value = ER;
+                }
+            }
+
+            // Calcular la mitigación y agregarla al DataGridView6
+            foreach (DataGridViewRow row in dataGridView4.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    int ER;
+                    int PB;
+                    if (int.TryParse(row.Cells["ER"].Value?.ToString(), out ER) &&
+                        int.TryParse(row.Cells["PB"].Value?.ToString(), out PB))
+                    {
+                        int Mitigacion = ER * PB;
+
+                        // Obtener los valores de ID y Nombre del DataGridView1
+
+                        Riesgo r1 = new Riesgo();
+                        int ID = r1.Id = Convert.ToInt32(txtId.Text);
+                        
+                        if (int.TryParse(dataGridView1.Rows[row.Index].Cells["ID"].Value?.ToString(), out ID))
+                        {
+                            string Nombre = dataGridView1.Rows[row.Index].Cells["Nombre"].Value.ToString();
+
+                            // Agregar los valores al DataGridView6
+                            int rowIndex = dataGridView6.Rows.Add();
+                            dataGridView6.Rows[ID].Cells["ID"].Value = ID;
+                            dataGridView6.Rows[rowIndex].Cells["Nombre"].Value = Nombre;
+                            dataGridView6.Rows[rowIndex].Cells["CR"].Value = row.Cells["CR"].Value;
+                            dataGridView6.Rows[rowIndex].Cells["Mitigacion"].Value = Mitigacion;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error de formato en la celda ID en la fila " + (row.Index + 1));
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error de formato en las celdas ER o PB en la fila " + (row.Index + 1));
+                    }
+                    AgregarDatosDataGridView4();
+                }
+            }
+        }
+
+
+
+
+
+
+        public class Riesgo
+        {
+            //  public int Ref { get; set; }
+            public int Id { get; set; }
+            public string Activo { get; set; }
+            public string Nombre { get; set; }
+            public string Tipo { get; set; }
+            public string Daño { get; set; }
+            public string Analista { get; set; }
+            public string Fecha { get; set; }
+            //public bool Estado { get; set;}
+
+
+
+            internal object Add(Riesgo riesgos)
+            {
+                throw new NotImplementedException();
+            }
+        }
+        public class Riesgo2
+        {
+            //public int ID { get; set; }
+            public int F { get; set; }
+            public int S { get; set; }
+            public int P { get; set; }
+            public int E { get; set; }
+            public int A { get; set; }
+            public int V { get; set; }
+            //public int I { get; set; }
+            //public int D { get; set; }
+            //public int C { get; set; }
+            public int PB { get; set; }
+            public int ER { get; set; }
+
+        }
+
+
+
     }
-
-
 }
