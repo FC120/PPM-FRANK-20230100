@@ -67,6 +67,7 @@ namespace Risxpert
             this.lblP = new System.Windows.Forms.Label();
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtS = new System.Windows.Forms.TextBox();
+            this.txtF = new System.Windows.Forms.TextBox();
             this.lblS = new System.Windows.Forms.Label();
             this.lblA = new System.Windows.Forms.Label();
             this.lblF = new System.Windows.Forms.Label();
@@ -103,10 +104,9 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.txtF = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -476,6 +476,13 @@ namespace Risxpert
             this.txtS.Size = new System.Drawing.Size(41, 29);
             this.txtS.TabIndex = 30;
             // 
+            // txtF
+            // 
+            this.txtF.Location = new System.Drawing.Point(36, 55);
+            this.txtF.Name = "txtF";
+            this.txtF.Size = new System.Drawing.Size(41, 29);
+            this.txtF.TabIndex = 29;
+            // 
             // lblS
             // 
             this.lblS.AutoSize = true;
@@ -515,7 +522,7 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn27,
             this.dataGridViewTextBoxColumn28,
             this.dataGridViewTextBoxColumn29});
-            this.dataGridView3.Location = new System.Drawing.Point(727, 125);
+            this.dataGridView3.Location = new System.Drawing.Point(729, 160);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(527, 184);
             this.dataGridView3.TabIndex = 21;
@@ -572,7 +579,7 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn23});
             this.dataGridView2.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView2.Location = new System.Drawing.Point(8, 125);
+            this.dataGridView2.Location = new System.Drawing.Point(10, 160);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(722, 184);
             this.dataGridView2.TabIndex = 16;
@@ -774,6 +781,17 @@ namespace Risxpert
             this.tabPage3.Text = "Fase 4";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(44, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1166, 108);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "RESULTADOS_FINALES";
+            this.label2.Click += new System.EventHandler(this.label2_Click_2);
+            // 
             // dataGridView6
             // 
             this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -785,13 +803,6 @@ namespace Risxpert
             this.dataGridView6.Size = new System.Drawing.Size(1189, 184);
             this.dataGridView6.TabIndex = 26;
             // 
-            // txtF
-            // 
-            this.txtF.Location = new System.Drawing.Point(36, 55);
-            this.txtF.Name = "txtF";
-            this.txtF.Size = new System.Drawing.Size(41, 29);
-            this.txtF.TabIndex = 29;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -801,17 +812,6 @@ namespace Risxpert
             this.label1.Size = new System.Drawing.Size(533, 108);
             this.label1.TabIndex = 10;
             this.label1.Text = "RISXPERT";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1166, 108);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "RESULTADOS_FINALES";
-            this.label2.Click += new System.EventHandler(this.label2_Click_2);
             // 
             // Form_Risxpert
             // 

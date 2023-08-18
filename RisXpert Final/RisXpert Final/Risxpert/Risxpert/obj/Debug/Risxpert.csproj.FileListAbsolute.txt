@@ -75,3 +75,17 @@ C:\Users\Fc\Documents\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\
 C:\Users\Fc\Documents\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
 C:\Users\Fc\Documents\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.exe
 C:\Users\Fc\Documents\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.pdb
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.exe.config
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.exe
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\Risxpert.pdb
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\LiteDB.dll
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\bin\Debug\LiteDB.xml
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.AssemblyReference.cache
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.Form_Risxpert.resources
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.Properties.Resources.resources
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.GenerateResource.cache
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CoreCompileInputs.cache
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.csproj.CopyComplete
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.exe
+C:\Users\Fc\Documents\GitHub\PPM-FRANK-20230100\RisXpert Final\RisXpert Final\Risxpert\Risxpert\obj\Debug\Risxpert.pdb

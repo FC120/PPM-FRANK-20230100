@@ -46,38 +46,6 @@ namespace Risxpert
 
 
 
-
-
-        /*
-         private void SaveData(int i)
-         {
-             MessageBox.Show("¡El botón fue clicado!");
-             using (var db = new LiteDatabase(@"C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Data Base Lite DB Risxpert\Risxpert.txt")) { }
-            
-        /*var col = db.GetCollection
-         }
-        */
-
-        /*
-        private string nombre; // Variable para almacenar el nombre
-        private string fecha; //Variable para almacenar el nombre
-        private string activo;
-        private string tipo;
-        private string analista;
-        private string daño;*/
-
-
-
-
-
-        //Riesgo = new Riesgo(int n);
-
-
-
-
-
-
-
         public Form_Risxpert()
         {
             InitializeComponent();
@@ -86,41 +54,11 @@ namespace Risxpert
 
 
 
-
-
-
-
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
 
-
-
-
-
-            /*
-            List<Riesgo> Riesgos = new List<Riesgo>();
-            {
-                Riesgos.Add(item: new Riesgo {Ref = 1, Id = 1, Activo = "", Nombre = "", Tipo = "", Daño = "" });
-                ActualizarDataGridView();
-                dataGridView1.Rows.Clear();
-                dataGridView1.Rows.Add("", "", "", "", "");
-
-
-            }*/
-            //lblMensaje.Text = "";
-            /* if (FileDialog.Exists("database.txt"))
-             {
-                 return;
-             }
-             StreamWriter archivo = new StreamWriter("database.txt");
-             archivo.Close();*/
         }
-
-
 
 
 
@@ -289,42 +227,7 @@ namespace Risxpert
             }
         }
 
-        //private void ActualizarDataGridView()
-        //{
-
-        //    List<Riesgo> Riesgos = new List<Riesgo>();
-
-        //    // Limpiar el DataGridView
-        //    // dataGridView1.Rows.Clear();
-
-        //    // Agregar los datos actualizados a partir de la lista Riesgos al DataGridView
-        //    foreach (Riesgo riesgo in Riesgos)
-        //    {
-        //        dataGridView1.Rows.Add(riesgo.Id, riesgo.Activo, riesgo.Nombre, riesgo.Tipo, riesgo.Daño);
-        //    }
-        //    //dataGridView1.Rows.Clear();
-
-        //}
-
-        /*private void tabControl_Selected(object sender, TabControlEventArgs e)
-        { 
-            for (int i = 0; i < dataGridView1.Rows.Count;)
-            {
-                UpdateTab2(i);
-                UpdateTab3(i);
-                UpdateTab4(i);
-            }
-        }*/
-
-        //private void UpdateTab2(int i)
-        //{
-        //    Riesgos = Riesgos[i];
-
-        //}
-
-
-
-
+       
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -361,7 +264,6 @@ namespace Risxpert
 
 
         }
-
 
 
         private void BtnGuardar_Click(object sender, EventArgs e)
