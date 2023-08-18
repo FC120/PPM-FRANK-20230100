@@ -337,26 +337,7 @@ namespace Risxpert
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            List<Riesgo> Riesgos = new List<Riesgo>();
-
-
-            /* // Paso 2: Limpiar DataGridView2
-             dataGridView2.Rows.Clear();
-
-              Paso 3: Agregar los datos a DataGridView2
-             foreach (Riesgo riesgo in datosDataGridView1)
-             {
-                 dataGridView2.Rows.Add(riesgo.Ref, riesgo.Id, riesgo.Nombre, riesgo.Fecha, riesgo.Activo, riesgo.Tipo, riesgo.Analista, riesgo.Daño, riesgo.Estado);
-             }*/
-
-
-            /*  dataGridView2.Rows.Add(dataGridView1);
-            dataGridView2.Rows.Add(dataGridView2);
-
-            /*  for (int n = 0; n = Riesgos; n++)
-            {
-                dataGridView2 = dataGridView1.Rows.cell[0];
-            }*/
+          
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -397,81 +378,7 @@ namespace Risxpert
                 MessageBox.Show("Datos guardados en la base de datos.");
             }
 
-
-
-
-            //ActualizarDataGridView();
-            /*
-
-            // Recorre las filas del DataGridView y crea objetos Riesgo para cada fila
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (!row.IsNewRow)
-                {
-                    Riesgo Riesgos = new Riesgo
-                    {
-                        //  Ref = Convert.ToInt32(row.Cells["Ref"].Value),
-                        Id = Convert.ToInt32(row.Cells["Id"].Value),
-                        Nombre = row.Cells["Nombre"].Value.ToString(),
-                        Fecha = Convert.ToDateTime(row.Cells["Fecha"].Value),
-                        Activo = row.Cells["Activo"].Value.ToString(),
-                        Tipo = row.Cells["Tipo"].Value.ToString(),
-                        Analista = row.Cells["Analista"].Value.ToString(),
-                        Daño = row.Cells["Daño"].Value.ToString(),
-                        //Estado = Convert.ToBoolean(row.Cells["Estado"].Value)
-                    };
-
-                    object value = Riesgos.Add(Riesgos); // Agrega el objeto Riesgo a la lista
-                }
-            }
-            */
-            /*
-                        // Guarda los datos en LiteDB
-                        using (var db = new LiteDatabase(@"C:\Programación\Programación para Mecatrónicos\PPM\Tarea 9\Risxpert program\Risxpert\Data Base Lite DB Risxpert\mibasederisxpert.db"))
-                        {
-                            var col = db.GetCollection<Riesgo>("Riesgos");
-
-                            // Borra todos los datos actuales en la colección antes de guardar los nuevos datos
-                           // bool v = col.Delete(Query.All());
-
-                            // Inserta los nuevos datos en la colección
-                            col.Insert((Riesgo)col);
-                        }
-
-                        // Actualiza el DataGridView para mostrar los datos guardados
-                        ActualizarDataGridView();*/
-
         }
-
-
-
-        /* private void TransferirDatosDataGridView()
-         {
-             // Paso 1: Obtener los datos de DataGridView1
-             List<Riesgo> datosDataGridView1 = new List<Riesgo>();
-             foreach (DataGridViewRow row in dataGridView1.Rows)
-             {
-                 if (!row.IsNewRow)
-                 {
-                     Riesgo riesgo = new Riesgo
-                     {
-                         Ref = Convert.ToInt32(row.Cells["Ref"].Value),
-                         Id = Convert.ToInt32(row.Cells["Id"].Value),
-                         Nombre = row.Cells["Nombre"].Value.ToString(),
-                         Fecha = Convert.ToDateTime(row.Cells["Fecha"].Value),
-                         Activo = row.Cells["Activo"].Value.ToString(),
-                         Tipo = row.Cells["Tipo"].Value.ToString(),
-                         Analista = row.Cells["Analista"].Value.ToString(),
-                         Daño = row.Cells["Daño"].Value.ToString(),
-                         Estado = Convert.ToBoolean(row.Cells["Estado"].Value)
-                     };
-
-                     datosDataGridView1.Add(riesgo);
-                 } 
-             }
-             */
-
-
 
 
 
@@ -479,56 +386,6 @@ namespace Risxpert
         {
 
         }
-
-
-
-        // btnGuardar.Click += SaveData(int i) ;
-
-
-
-
-        // btnGuardar = dataGridView1.Rows[1];
-
-        // for (n = 0;  n < Riesgos.Count; n++)
-        //{
-        //   Riesgo r = Riesgos[n];
-        //  dataGridView1.Rows.Add(r.Id, r.Nombre, r.Fecha, r.Activo, r.Tipo, r.Analista, r.Daño);
-
-
-
-        //dataGridView1.Rows.Clear();
-
-        //btnGuardar = dataGridView1.Rows[0];
-
-        /* for (int i = 0; i < Riesgos.Count; i++)
-         {
-             Riesgo riesgo = Riesgos[i];
-             dataGridView1.Rows.Add(riesgo.Id, riesgo.Nombre, riesgo.Fecha, riesgo.Activo, riesgo.Tipo, riesgo.Analista, riesgo.Daño);
-         }
-
-         */
-        /*StreamWriter archive  = new StreamWriter("database.txt", true);
-        archive.WriteLine(txtAnalista.Text);
-        archive.WriteLine(txtFecha.Text);
-        archive.WriteLine(dataGridView1.Text);
-        archive.Close();*/
-
-
-        /* private EventHandler SaveData(int v, object i)
-         {
-             throw new NotImplementedException();
-         }/*
-
-         private void lblMensaje_Click(object sender, EventArgs e)
-         {
-
-         }
-
-         private void txtFecha_TextChanged(object sender, EventArgs e)
-         {
-             /*Fecha = txtFecha.Text; */
-
-
 
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -543,66 +400,6 @@ namespace Risxpert
 
         }
 
-
-        /*private void btnAgregar2_Click_1(object sender, EventArgs e)
-        {
-            List<int> listaDatos = new List<int> { 10, 20, 30, 40, 50 };
-
-            // Asegúrate de que haya suficientes filas en la DataGridView para contener los datos.
-            dataGridView1.Rows.Clear();
-            dataGridView1.Rows.Add(listaDatos.Count);
-
-            // Agregar los datos enteros a la primera columna de la DataGridView.
-            for (int i = 0; i < listaDatos.Count; i++)
-            {
-                dataGridView1.Rows[i].Cells[0].Value = listaDatos[i];
-            }
-        }
-        */
-        /* private void btnAgregar_Click_1(object sender, EventArgs e)
-         {
-             Riesgo r1 = new Riesgo();
-             Row = dataGridView1.Rows.Add();
-             r1.Nombre = txtNombre.Text;
-             r1.Daño = txtDano.Text;
-             r1.Analista = txtAnalista.Text;
-             r1.Activo = txtActivo.Text;
-             r1.Tipo = txtTipo.Text;
-             r1.Fecha = txtFecha.Text;
-             //r1.Estado = r1.Estado.ToString(txtEstado.Text);
-             r1.Id = Int32.Parse(txtId.Text);
-
-             Riesgos.Add(r1);
-
-             dataGridView1.Rows[Row].Cells[CELL_ID].Value = txtId;
-             dataGridView1.Rows[Row].Cells[CELL_NAME].Value = txtNombre;
-             dataGridView1.Rows[Row].Cells[CELL_DANO].Value = txtDano;
-             dataGridView1.Rows[Row].Cells[CELL_ACTIVO].Value = txtActivo;
-             dataGridView1.Rows[Row].Cells[CELL_TIPO].Value = txtTipo;
-             dataGridView1.Rows[Row].Cells[CELL_FECHA].Value = txtFecha;
-
-             dataGridView1.DataSource = null;
-             dataGridView1.DataSource = Riesgos;
-
-             txtNombre.Text = string.Empty;
-             txtDano.Text = string.Empty;
-             txtId.Text = string.Empty;
-             txtFecha.Text = string.Empty;
-             txtTipo.Text = string.Empty;
-
-
-         }*/
-
-
-
-
-
-
-
-
-
-
-
         private void btnMas_Click(object sender, EventArgs e)
         {
             Riesgo newRiesgo = new Riesgo();
@@ -616,40 +413,11 @@ namespace Risxpert
             dataGridView1.CurrentCell = dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0];
 
 
-
-
-
-            //DataGridViewRow newRow = dataGridView1.Rows[n];
-
-
-            //dataGridView1.Rows[n].ToString();
-
-            /*DataGridViewRow lastRow = dataGridView1.Rows[dataGridView1.Rows.Count - 1];
-            bool isLastRowEmpty = true;
-            foreach (DataGridViewCell cell in lastRow.Cells)
-            {
-                if (cell.Value != null && cell.Value.ToString().Trim() != "")
-                {
-                    isLastRowEmpty = false;
-                    break;
-                }
-            }
-
-            // Si la última fila está vacía, agregar una nueva fila
-            if (isLastRowEmpty)
-            {
-                dataGridView1.AllowUserToAddRows = true;
-                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0].Selected = true; // Opcional: seleccionar la nueva fila
-            }
-            else
-            { }
-            dataGridView1.Rows.Add();*/
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Riesgo r1 = new Riesgo();
-            // Row = dataGridView1.Rows.Add();
             r1.Id = Int32.Parse(txtId.Text);
             r1.Activo = txtActivo.Text;
             r1.Nombre = txtNombre.Text;
@@ -657,29 +425,10 @@ namespace Risxpert
             r1.Daño = txtDano.Text;
             r1.Analista = txtAnalista.Text;
             r1.Fecha = txtFecha.Text;
-            //r1.Estado = r1.Estado.ToString(txtEstado.Text);
+            
 
 
             Riesgos.Add(r1);
-
-            //dataGridView1.Rows.Add(r1.Activo, r1.Nombre, r1.Tipo, r1.Daño, r1.Analista, r1.Fecha);
-
-            // Intentarlo con la lista nueva
-
-            //for (int i = 0; i <  ;i++) 
-            //{
-            //    Riesgos[i] = r1;
-            //}
-
-            /*
-            dataGridView1.Rows[Row].Cells[CELL_ID].Value = r1.Id;
-            dataGridView1.Rows[Row].Cells[CELL_NAME].Value = r1.Nombre;
-            dataGridView1.Rows[Row].Cells[CELL_DANO].Value = r1.Daño;
-            dataGridView1.Rows[Row].Cells[CELL_ACTIVO].Value = r1.Activo;
-            dataGridView1.Rows[Row].Cells[CELL_TIPO].Value = r1.Tipo;
-            dataGridView1.Rows[Row].Cells[CELL_ANALISTA].Value = r1.Analista;
-            dataGridView1.Rows[Row].Cells[CELL_FECHA].Value = r1.Fecha;
-            */
 
 
             dataGridView1.DataSource = null;
@@ -715,12 +464,6 @@ namespace Risxpert
             AgregarDatosDataGridView5();
 
 
-            ////////Crear una nueva instancia para la tabla 3
-
-            //Riesgo r2 = new Riesgo();
-
-
-
         }
 
         private void AgregarDatosDataGridView2()
@@ -750,10 +493,8 @@ namespace Risxpert
 
         private void AgregarDatosDataGridView6()
         {
-
+           
             dataGridView6.DataSource = null;
-
-
             dataGridView6.DataSource = Riesgos2;
         }
 
@@ -771,9 +512,6 @@ namespace Risxpert
                 r1.Cells[CELL_DANO].Value = txtDano.Text;
                 r1.Cells[CELL_ANALISTA].Value = txtAnalista.Text;
                 r1.Cells[CELL_FECHA].Value = txtFecha.Text;
-
-
-
 
             }
         }
@@ -858,6 +596,9 @@ namespace Risxpert
             }
         }
 
+
+        private int mitigacionCounter = 1;
+
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView4.Rows)
@@ -876,11 +617,26 @@ namespace Risxpert
                     int C = I + D;
                     int PB = A * V;
                     int ER = C * PB;
+
                     // Actualizar las celdas PB y ER en el DataGridView4
                     row.Cells["PB"].Value = PB;
                     row.Cells["ER"].Value = ER;
                 }
             }
+
+            // Limpiar el DataGridView6 antes de agregar los datos calculados
+            dataGridView6.Rows.Clear();
+
+            // Definir las columnas del DataGridView6 si aún no están definidas
+            if (dataGridView6.Columns.Count == 0)
+            {
+                dataGridView6.Columns.Add("ID", "ID");
+                dataGridView6.Columns.Add("Nombre", "Nombre");
+                dataGridView6.Columns.Add("CR", "CR");
+                dataGridView6.Columns.Add("Mitigacion", "Mitigacion");
+            }
+
+            int mitigacionCounter = 1; // Inicializar el contador
 
             // Calcular la mitigación y agregarla al DataGridView6
             foreach (DataGridViewRow row in dataGridView4.Rows)
@@ -892,39 +648,23 @@ namespace Risxpert
                     if (int.TryParse(row.Cells["ER"].Value?.ToString(), out ER) &&
                         int.TryParse(row.Cells["PB"].Value?.ToString(), out PB))
                     {
-                        int Mitigacion = ER * PB;
+                        int CR = ER * PB;
 
-                        // Obtener los valores de ID y Nombre del DataGridView1
+                        // Obtener el Nombre del DataGridView1
+                        string Nombre = dataGridView1.Rows[row.Index].Cells["Nombre"].Value.ToString();
 
-                        Riesgo r1 = new Riesgo();
-                        int ID = r1.Id = Convert.ToInt32(txtId.Text);
-                        
-                        if (int.TryParse(dataGridView1.Rows[row.Index].Cells["ID"].Value?.ToString(), out ID))
-                        {
-                            string Nombre = dataGridView1.Rows[row.Index].Cells["Nombre"].Value.ToString();
+                        // Agregar los valores al DataGridView6
+                        dataGridView6.Rows.Add(txtId.Text, Nombre, CR, mitigacionCounter);
 
-                            // Agregar los valores al DataGridView6
-                            int rowIndex = dataGridView6.Rows.Add();
-                            dataGridView6.Rows[ID].Cells["ID"].Value = ID;
-                            dataGridView6.Rows[rowIndex].Cells["Nombre"].Value = Nombre;
-                            dataGridView6.Rows[rowIndex].Cells["CR"].Value = row.Cells["CR"].Value;
-                            dataGridView6.Rows[rowIndex].Cells["Mitigacion"].Value = Mitigacion;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error de formato en la celda ID en la fila " + (row.Index + 1));
-                        }
+                        mitigacionCounter++;
                     }
                     else
                     {
                         MessageBox.Show("Error de formato en las celdas ER o PB en la fila " + (row.Index + 1));
                     }
-                    AgregarDatosDataGridView4();
                 }
             }
         }
-
-
 
 
 
@@ -965,7 +705,14 @@ namespace Risxpert
 
         }
 
+        private void label2_Click_1(object sender, EventArgs e)
+        {
 
+        }
 
+        private void label2_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
