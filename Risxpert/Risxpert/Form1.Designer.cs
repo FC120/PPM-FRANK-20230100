@@ -55,7 +55,6 @@ namespace Risxpert
             this.DANO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ANALISTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnAgregar2 = new System.Windows.Forms.Button();
@@ -78,14 +77,6 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
@@ -104,20 +95,29 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage4
@@ -139,7 +139,6 @@ namespace Risxpert
             this.tabPage4.Controls.Add(this.txtAnalista);
             this.tabPage4.Controls.Add(this.lblAnalista);
             this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Controls.Add(this.btnGuardar);
             this.tabPage4.Location = new System.Drawing.Point(4, 54);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -149,7 +148,7 @@ namespace Risxpert
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(110, 173);
+            this.txtTipo.Location = new System.Drawing.Point(118, 175);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(177, 29);
             this.txtTipo.TabIndex = 22;
@@ -157,7 +156,7 @@ namespace Risxpert
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(25, 176);
+            this.lblTipo.Location = new System.Drawing.Point(33, 178);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(48, 24);
             this.lblTipo.TabIndex = 21;
@@ -165,7 +164,7 @@ namespace Risxpert
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(110, 136);
+            this.txtNombre.Location = new System.Drawing.Point(118, 138);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(177, 29);
             this.txtNombre.TabIndex = 19;
@@ -173,7 +172,7 @@ namespace Risxpert
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(25, 136);
+            this.lblNombre.Location = new System.Drawing.Point(33, 138);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(79, 24);
             this.lblNombre.TabIndex = 18;
@@ -185,7 +184,7 @@ namespace Risxpert
             this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAgregar.FlatAppearance.BorderSize = 10;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Location = new System.Drawing.Point(586, 172);
+            this.btnAgregar.Location = new System.Drawing.Point(607, 211);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 33);
             this.btnAgregar.TabIndex = 17;
@@ -195,21 +194,21 @@ namespace Risxpert
             // 
             // txtDano
             // 
-            this.txtDano.Location = new System.Drawing.Point(110, 210);
+            this.txtDano.Location = new System.Drawing.Point(118, 212);
             this.txtDano.Name = "txtDano";
             this.txtDano.Size = new System.Drawing.Size(177, 29);
             this.txtDano.TabIndex = 16;
             // 
             // txtActivo
             // 
-            this.txtActivo.Location = new System.Drawing.Point(110, 96);
+            this.txtActivo.Location = new System.Drawing.Point(118, 98);
             this.txtActivo.Name = "txtActivo";
             this.txtActivo.Size = new System.Drawing.Size(177, 29);
             this.txtActivo.TabIndex = 14;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(110, 60);
+            this.txtId.Location = new System.Drawing.Point(118, 62);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(41, 29);
             this.txtId.TabIndex = 13;
@@ -217,7 +216,7 @@ namespace Risxpert
             // lblActivo
             // 
             this.lblActivo.AutoSize = true;
-            this.lblActivo.Location = new System.Drawing.Point(25, 96);
+            this.lblActivo.Location = new System.Drawing.Point(33, 98);
             this.lblActivo.Name = "lblActivo";
             this.lblActivo.Size = new System.Drawing.Size(61, 24);
             this.lblActivo.TabIndex = 11;
@@ -226,7 +225,7 @@ namespace Risxpert
             // lblDaño
             // 
             this.lblDaño.AutoSize = true;
-            this.lblDaño.Location = new System.Drawing.Point(25, 210);
+            this.lblDaño.Location = new System.Drawing.Point(33, 212);
             this.lblDaño.Name = "lblDaño";
             this.lblDaño.Size = new System.Drawing.Size(55, 24);
             this.lblDaño.TabIndex = 11;
@@ -235,7 +234,7 @@ namespace Risxpert
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(25, 60);
+            this.lblID.Location = new System.Drawing.Point(33, 62);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(27, 24);
             this.lblID.TabIndex = 10;
@@ -244,7 +243,7 @@ namespace Risxpert
             // txtFecha
             // 
             this.txtFecha.BackColor = System.Drawing.Color.White;
-            this.txtFecha.Location = new System.Drawing.Point(389, 212);
+            this.txtFecha.Location = new System.Drawing.Point(393, 212);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(191, 29);
             this.txtFecha.TabIndex = 6;
@@ -252,7 +251,7 @@ namespace Risxpert
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(308, 215);
+            this.lblFecha.Location = new System.Drawing.Point(312, 215);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(64, 24);
             this.lblFecha.TabIndex = 5;
@@ -262,7 +261,7 @@ namespace Risxpert
             // txtAnalista
             // 
             this.txtAnalista.BackColor = System.Drawing.Color.White;
-            this.txtAnalista.Location = new System.Drawing.Point(389, 173);
+            this.txtAnalista.Location = new System.Drawing.Point(393, 173);
             this.txtAnalista.Name = "txtAnalista";
             this.txtAnalista.Size = new System.Drawing.Size(191, 29);
             this.txtAnalista.TabIndex = 4;
@@ -271,7 +270,7 @@ namespace Risxpert
             // lblAnalista
             // 
             this.lblAnalista.AutoSize = true;
-            this.lblAnalista.Location = new System.Drawing.Point(308, 178);
+            this.lblAnalista.Location = new System.Drawing.Point(312, 178);
             this.lblAnalista.Name = "lblAnalista";
             this.lblAnalista.Size = new System.Drawing.Size(75, 24);
             this.lblAnalista.TabIndex = 3;
@@ -292,11 +291,10 @@ namespace Risxpert
             this.ANALISTA,
             this.Fecha});
             this.dataGridView1.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 279);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 282);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1216, 184);
+            this.dataGridView1.Size = new System.Drawing.Size(1211, 184);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.AllowUserToAddRowsChanged += new System.EventHandler(this.btnMas_Click);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -345,20 +343,6 @@ namespace Risxpert
             this.Fecha.Name = "Fecha";
             this.Fecha.Visible = false;
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Lime;
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnGuardar.FlatAppearance.BorderSize = 10;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuardar.Location = new System.Drawing.Point(586, 208);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(109, 33);
-            this.btnGuardar.TabIndex = 1;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -406,9 +390,9 @@ namespace Risxpert
             this.btnAgregar2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAgregar2.FlatAppearance.BorderSize = 10;
             this.btnAgregar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar2.Location = new System.Drawing.Point(261, 53);
+            this.btnAgregar2.Location = new System.Drawing.Point(268, 102);
             this.btnAgregar2.Name = "btnAgregar2";
-            this.btnAgregar2.Size = new System.Drawing.Size(158, 66);
+            this.btnAgregar2.Size = new System.Drawing.Size(135, 33);
             this.btnAgregar2.TabIndex = 38;
             this.btnAgregar2.Text = "Agregar";
             this.btnAgregar2.UseVisualStyleBackColor = false;
@@ -416,7 +400,7 @@ namespace Risxpert
             // 
             // txtV
             // 
-            this.txtV.Location = new System.Drawing.Point(116, 55);
+            this.txtV.Location = new System.Drawing.Point(125, 120);
             this.txtV.Name = "txtV";
             this.txtV.Size = new System.Drawing.Size(41, 29);
             this.txtV.TabIndex = 37;
@@ -424,7 +408,7 @@ namespace Risxpert
             // lblV
             // 
             this.lblV.AutoSize = true;
-            this.lblV.Location = new System.Drawing.Point(88, 60);
+            this.lblV.Location = new System.Drawing.Point(97, 125);
             this.lblV.Name = "lblV";
             this.lblV.Size = new System.Drawing.Size(23, 24);
             this.lblV.TabIndex = 36;
@@ -432,7 +416,7 @@ namespace Risxpert
             // 
             // txtE
             // 
-            this.txtE.Location = new System.Drawing.Point(204, 53);
+            this.txtE.Location = new System.Drawing.Point(205, 120);
             this.txtE.Name = "txtE";
             this.txtE.Size = new System.Drawing.Size(41, 29);
             this.txtE.TabIndex = 35;
@@ -440,7 +424,7 @@ namespace Risxpert
             // lblE
             // 
             this.lblE.AutoSize = true;
-            this.lblE.Location = new System.Drawing.Point(175, 60);
+            this.lblE.Location = new System.Drawing.Point(176, 124);
             this.lblE.Name = "lblE";
             this.lblE.Size = new System.Drawing.Size(23, 24);
             this.lblE.TabIndex = 34;
@@ -448,7 +432,7 @@ namespace Risxpert
             // 
             // txtP
             // 
-            this.txtP.Location = new System.Drawing.Point(116, 90);
+            this.txtP.Location = new System.Drawing.Point(46, 120);
             this.txtP.Name = "txtP";
             this.txtP.Size = new System.Drawing.Size(41, 29);
             this.txtP.TabIndex = 33;
@@ -456,7 +440,7 @@ namespace Risxpert
             // lblP
             // 
             this.lblP.AutoSize = true;
-            this.lblP.Location = new System.Drawing.Point(88, 90);
+            this.lblP.Location = new System.Drawing.Point(18, 120);
             this.lblP.Name = "lblP";
             this.lblP.Size = new System.Drawing.Size(22, 24);
             this.lblP.TabIndex = 32;
@@ -464,21 +448,21 @@ namespace Risxpert
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(204, 90);
+            this.txtA.Location = new System.Drawing.Point(125, 85);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(41, 29);
             this.txtA.TabIndex = 31;
             // 
             // txtS
             // 
-            this.txtS.Location = new System.Drawing.Point(36, 90);
+            this.txtS.Location = new System.Drawing.Point(46, 85);
             this.txtS.Name = "txtS";
             this.txtS.Size = new System.Drawing.Size(41, 29);
             this.txtS.TabIndex = 30;
             // 
             // txtF
             // 
-            this.txtF.Location = new System.Drawing.Point(36, 55);
+            this.txtF.Location = new System.Drawing.Point(205, 85);
             this.txtF.Name = "txtF";
             this.txtF.Size = new System.Drawing.Size(41, 29);
             this.txtF.TabIndex = 29;
@@ -486,7 +470,7 @@ namespace Risxpert
             // lblS
             // 
             this.lblS.AutoSize = true;
-            this.lblS.Location = new System.Drawing.Point(8, 90);
+            this.lblS.Location = new System.Drawing.Point(18, 85);
             this.lblS.Name = "lblS";
             this.lblS.Size = new System.Drawing.Size(22, 24);
             this.lblS.TabIndex = 27;
@@ -495,7 +479,7 @@ namespace Risxpert
             // lblA
             // 
             this.lblA.AutoSize = true;
-            this.lblA.Location = new System.Drawing.Point(176, 90);
+            this.lblA.Location = new System.Drawing.Point(97, 85);
             this.lblA.Name = "lblA";
             this.lblA.Size = new System.Drawing.Size(23, 24);
             this.lblA.TabIndex = 28;
@@ -504,7 +488,7 @@ namespace Risxpert
             // lblF
             // 
             this.lblF.AutoSize = true;
-            this.lblF.Location = new System.Drawing.Point(8, 60);
+            this.lblF.Location = new System.Drawing.Point(177, 90);
             this.lblF.Name = "lblF";
             this.lblF.Size = new System.Drawing.Size(22, 24);
             this.lblF.TabIndex = 26;
@@ -522,9 +506,9 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn27,
             this.dataGridViewTextBoxColumn28,
             this.dataGridViewTextBoxColumn29});
-            this.dataGridView3.Location = new System.Drawing.Point(729, 160);
+            this.dataGridView3.Location = new System.Drawing.Point(22, 188);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(527, 184);
+            this.dataGridView3.Size = new System.Drawing.Size(1200, 184);
             this.dataGridView3.TabIndex = 21;
             this.dataGridView3.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             this.dataGridView3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView3_KeyDown);
@@ -565,68 +549,6 @@ namespace Risxpert
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
             this.dataGridViewTextBoxColumn29.Visible = false;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn23});
-            this.dataGridView2.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView2.Location = new System.Drawing.Point(10, 160);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(722, 184);
-            this.dataGridView2.TabIndex = 16;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "ACTIVO";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "NOMBRE";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "TIPO";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "DAÑO";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn6.HeaderText = "ANALISTA";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "FECHA";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.Visible = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.btnCalcular);
@@ -646,9 +568,9 @@ namespace Risxpert
             this.btnCalcular.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCalcular.FlatAppearance.BorderSize = 10;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCalcular.Location = new System.Drawing.Point(17, 75);
+            this.btnCalcular.Location = new System.Drawing.Point(17, 93);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(128, 60);
+            this.btnCalcular.Size = new System.Drawing.Size(128, 47);
             this.btnCalcular.TabIndex = 29;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -772,6 +694,7 @@ namespace Risxpert
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.btnGuardar);
             this.tabPage3.Controls.Add(this.dataGridView6);
             this.tabPage3.Location = new System.Drawing.Point(4, 54);
             this.tabPage3.Name = "tabPage3";
@@ -781,27 +704,29 @@ namespace Risxpert
             this.tabPage3.Text = "Fase 4";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // btnGuardar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1166, 108);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "RESULTADOS_FINALES";
-            this.label2.Click += new System.EventHandler(this.label2_Click_2);
+            this.btnGuardar.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnGuardar.Location = new System.Drawing.Point(47, 174);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(103, 37);
+            this.btnGuardar.TabIndex = 27;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dataGridView6
             // 
+            this.dataGridView6.AllowUserToAddRows = false;
             this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView6.Location = new System.Drawing.Point(47, 210);
+            this.dataGridView6.Location = new System.Drawing.Point(47, 228);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(1189, 184);
+            this.dataGridView6.Size = new System.Drawing.Size(1189, 211);
             this.dataGridView6.TabIndex = 26;
+            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             // 
             // label1
             // 
@@ -812,6 +737,79 @@ namespace Risxpert
             this.label1.Size = new System.Drawing.Size(533, 108);
             this.label1.TabIndex = 10;
             this.label1.Text = "RISXPERT";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "FECHA";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn6.HeaderText = "ANALISTA";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "DAÑO";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "TIPO";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "NOMBRE";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "ACTIVO";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn23});
+            this.dataGridView2.GridColor = System.Drawing.Color.Gray;
+            this.dataGridView2.Location = new System.Drawing.Point(125, 188);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(709, 184);
+            this.dataGridView2.TabIndex = 16;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1166, 108);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "RESULTADOS_FINALES";
             // 
             // Form_Risxpert
             // 
@@ -833,13 +831,13 @@ namespace Risxpert
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -856,7 +854,6 @@ namespace Risxpert
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TextBox txtAnalista;
         private System.Windows.Forms.Label lblAnalista;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblActivo;
         private System.Windows.Forms.Label lblDaño;
@@ -876,14 +873,6 @@ namespace Risxpert
         private System.Windows.Forms.DataGridViewTextBoxColumn DANO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ANALISTA;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
@@ -921,8 +910,17 @@ namespace Risxpert
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.TextBox txtF;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.Label label2;
 
         public EventHandler txtFecha_TextChanged { get; private set; }
         public EventHandler btnAgregar2_Click_1 { get; private set; }
